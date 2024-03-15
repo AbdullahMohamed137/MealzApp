@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/idRLContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".presenter.activties.LoadingActivity">
+
+        <ImageView
+            android:id="@+id/image_loading"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/img_fastfood_24" />
+
+
+        <!--on below line we are creating progress bar-->
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_loading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:indeterminateTint="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_load"
+            style="@style/Button.OutLine"
+            android:layout_below="@id/idPBLoading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:enabled="false"
+            android:text="Click"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+</layout>
